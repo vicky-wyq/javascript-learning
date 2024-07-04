@@ -471,7 +471,6 @@ const x = '23';
 const calcAge = birthYear => 2037 - birthYear;
 
 console.log(calcAge(1991));
-*/
 
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
@@ -486,3 +485,4 @@ const printForecast = function (arr) {
 
 printForecast(data1);
 printForecast(data2);
+*/

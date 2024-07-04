@@ -1,123 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--Head-->
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Basic Metadata -->
-  <link rel="canonical" href="https://vickywang.me/application_info">
-
-  <title>
-    Application Info by Vicky Wang
-  </title>
-  <meta name="title" content="Application Info by Vicky Wang">
-  <meta name="author" content="Vicky W.">
-  <meta name="description" content="">
-
-
-
-  <meta name="robots" content="noindex,nofollow">
-  <!--  SEO excluded -->
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Application Info by Vicky Wang">
-  <meta property="og:" content="">
-  <meta property="og:url" content="https://vickywang.me/application_info">
-  <meta property="og:site_name" content="Vicky's Website">
-  <meta property="og:image" content="https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_web.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://vickywang.me/application_info">
-  <meta property="twitter:title" content="Application Info by Vicky Wang">
-  <meta property="twitter:description" content="">
-  <meta property="twitter:image" content="https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_web.png">
-
-  <!-- favicon -->
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-
-
-  <!-- Google Font Preconnect-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Google Font Preconnect-->
-
-  <!--sitewide font-family: 'Slackside One', sans-serif;  | use for note-->
-  <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
-  <!--sitewide font-family: 'Slackside One', sans-serif;  | use for note-->
-
-
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <!--sitewide font-family: 'Lato', sans-serif; -->
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <!--handwriting -  font-family: 'Caveat', sans-serif; -->
-  <!--handwriting -  font-family: 'Caveat Brush', sans-serif; -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  <!--handwriting font-family: 'Indie Flower'; -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <!--handwriting font-family: 'Gloria Hallelujah';  | Hello font|-->
-
-
-  <!--jQuery-->
-
-  <!--aos-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-
-
-  <link rel="stylesheet" href="js_study.css">
-    <!--  <script type="text/javascript" src="scripts_study_part1.js"></script> -->
-
-  <script type="text/javascript" src="scripts_study_pert2.js"></script>
-
-
-
-
-
-</head>
-<!--Head-->
-
-<body>
-  <header>
-    <h1>Guess My Number!</h1>
-    <p class="between">(Between 1 and 20)</p>
-    <button class="btn again">Again!</button>
-    <div class="number">?</div>
-  </header>
-  <main>
-    <section class="left">
-      <input type="number" class="guess" />
-      <button class="btn check">Check!</button>
-    </section>
-    <section class="right">
-      <p class="message">Start guessing...</p>
-      <p class="label-score">💯 Score: <span class="score">20</span></p>
-      <p class="label-highscore">
-        🥇 Highscore: <span class="highscore">0</span>
-      </p>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
-
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="scripts_study_pert3.js"></script>
+  </body>
 </html>
