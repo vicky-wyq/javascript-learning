@@ -1,0 +1,300 @@
+* {
+    border-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: var(--Grey800);
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    height: var(--height100);
+    background-color: var(--GreyHTMLBg);
+}
+:root {
+    --border-radius: 0.5em;
+
+    --border-radiusXS: 0.25em;
+    --border-radiusS: 0.5em;
+    --border-radiusM: 0.75em;
+    --border-radiusL: 1em;
+    --border-radiusXL: 1.25em;
+    --border-radiusMax: 50%;
+
+    --paddingXS: 6px;
+    --paddingS: 10px;
+    --paddingM: 14px;
+    --paddingL: 18px;
+    --paddingXL: 22px;
+    --paddingMax: 26px;
+
+    --height100: 100%;
+
+    --img-APPOINT: url("./image/Cover_APPOINTA.jpg");
+    --img-SEER: url("./image/Cover_SEER.jpg");
+
+    /* Color */
+    --white: #ffffff;
+    --alert: #a40000;
+    --alertLight: #fdefef;
+    --success: #007b65;
+    --successLight: #eafffb;
+
+    --alertLight: #fdefef;
+    --alert--pink: #eb5757;
+    --Highlight: rgba(255, 242, 0, 0.3);
+    --Grey900: #1b1b1b;
+    /*292929 2c2c2c #161616*/
+
+    --Grey800: #2f2f2f;
+    /* 5f6368 4f4f4f*/
+    --Grey700: #707070;
+    /* #505050 83878a 787878  757575*/
+    --Grey600: #a5a5a5;
+    /* #909090, 999D9F, 8e8787 a7a7a7*/
+    --Grey500: #cacaca;
+    /* #c8c8c8 e0e0e0*/
+    --Grey400: #e6e6e6;
+    /* e4e4e4; e6e6e6*/
+    --Grey300: #efefef;
+    /* efefef, f2f2f2*/
+    --Grey200: #f2f2f2;
+    /* F8F8F8, f2f2f2*/
+    --Grey100: #fafafa;
+
+    --GreyFooter: #faf9f8;
+    --GreyHTMLBg: #fefdfc;
+    /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
+
+    /* ======================== */
+
+    --LASOblueMobile: #4396d8;
+
+    --LASOblue800: #0159a6;
+    --LASOblue700: #016fd0;
+    --LASOblue500: #80b7e8;
+    --LASOblue400: #b2d5f4;
+
+    --LASOblue300: #e6f1fa;
+    --LASOblue200: #f2f8fc;
+    --LASOblue100: #fbfdff;
+
+    /* ======================== */
+
+    --colorTealDker: #228e92;
+    --colorTealDk: #8fbfbf;
+    --colorTealLt: #aad9d9;
+    /*never change    AAD9D9*/
+    /* 368661 projects 296448*/
+    --colorTealLtr: #e6f6f6;
+    --colorTealLtest: #faffff;
+    --Warm: #fcf5eb;
+
+    --AMBlue: #5384ed;
+
+    --WS-Blue: #35b9c5;
+    /* 2AA5F3*/
+    --WS-Teal: #35b9c5;
+    --WS-Teal-Light1: #c8ebee;
+    --WS-Teal-lighter: #d4f1f3;
+    --WS-Teal-light: #f3f4f4;
+    --WS-lightBG: rgba(243, 250, 253, 0.4);
+    /* ======================== */
+    --BYP-Teal800: #019a89;
+    --BYP-Teal700: #02c6b0;
+    --BYP-Teal600: #02dcc3;
+    --BYP-Teal400: #ccf8f3;
+    --BYP-Teal100: #eafcfc;
+    --BYP-Teal-bg: #f5fafa;
+    /* =========== New | Site Wide ============= */
+    --teal800: #2fa097;
+    /* #448686, */
+
+    --teal600: #84bfbf;
+    --teal500: #aad9d9;
+    --teal300: #d0ecea;
+    --teal200: #eff9f8;
+    --teal100: #fafdfd;
+    /* =========== New | Site Wide ============= */
+
+    --seer-purpleDark: #1513a0;
+
+    --seer-purple: #605dec;
+    --seer-purpleLighter: #bcbaf7;
+    --seer-purpleLightest: #f6f6fe;
+    --seer-purpleLightest1: rgba(246, 246, 254, 0.4);
+    --seer-purple--Orange: #fbbf7d;
+    --alpha: 0.8;
+
+    --APPOINTA-blue: #5384ed;
+    --APPOINTA-blueLight: #baccf4;
+
+    --APPOINTA-blueLighter: #e2edfd;
+    --APPOINTA-blueLightest: #f5f8ff;
+    --APPOINTA-yellow: #ffd109;
+
+    --APPOINTA-bg: #f5f8fa;
+    --White-transparent: rgba(255, 255, 255, 0.6);
+    --border: #f0f3fb;
+    --toasttab: #ff4c00;
+    --GardenersHub: #4c665b;
+
+    font-family: "Lato", sans-serif;
+    --GLORIFY-orangeBgLt: #eddacc;
+    --GLORIFY-orange: #efbd66;
+    --GLORIFY-orangeLt: #f5d7a3;
+
+    --GLORIFY-orangeLtest: #fffaf3;
+
+    --GlorifyBlue: #66b3fa;
+    --GlorifyGreen: #79c25a;
+}
+body {
+    width: 100%;
+    height: var(--height100);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+}
+
+/* ========= a link / states =========*/
+
+body a {
+    color: var(--Grey900);
+    cursor: pointer;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+    /* Add this line */
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--teal800) !important;
+}
+a:link.textUnderline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.06em;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--Grey900);
+}
+
+.textUnderline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.03em;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--Grey900);
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================== Font ========================*/
+
+.fontWeight100 {
+    font-weight: 100;
+}
+
+.fontWeight300 {
+    font-weight: 300;
+}
+
+.fontWeight400 {
+    font-weight: 400;
+}
+
+.fontWeight700 {
+    font-weight: 700;
+}
+
+h1,
+h2 {
+    font-weight: 400;
+    line-height: 2em;
+
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    line-height: 1.6em;
+
+}
+
+h1 {
+    font-size: clamp(1.3em, 1.8vw, 2.2em);
+    /* - first one is the minimum allowed font-size.
+       - third one is the maximum allowed font-size.
+       - second argument is font-size that you wish to always have. */
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+
+}
+
+h2 {
+    font-size: clamp(1.2em, 1.46vw, 1.68em);
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+
+}
+
+h3 {
+    font-size: clamp(1.04em, 1.26vw, 1.48em);
+    margin-top: clamp(0.42em, 0.56em, 1.2em);
+    margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+
+}
+
+h4 {
+    font-size: clamp(0.92em, 1.12vw, 1.2em);
+    margin-top: clamp(0.36em, 0.4em, 1em);
+    margin-bottom: clamp(0.36em, 0.4em, 1em);
+}
+
+h5 {
+    font-size: clamp(0.84em, 0.92vw, 1em);
+    margin-top: clamp(0.2em, 0.4em, 1em);
+    margin-bottom: clamp(0.2em, 0.4em, 1em);
+
+}
+
+h6 {
+    font-size: clamp(0.72em, 0.78vw, 0.86em);
+    margin: 0.26em 0;
+
+}
+
+p.light {
+    font-weight: 100;
+}
+
+p {
+    /*     font-size: clamp(0.83em, 1.06vw, 1.2em); */
+
+    font-size: clamp(0.8em, 1vw, 1.1em);
+
+    font-weight: 300;
+}
+
+/* default/normal */
+p.thick {
+    font-weight: 500;
+}
+
+strong {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    color: var(--Grey900);
+    margin: 1em, 0;
+}
