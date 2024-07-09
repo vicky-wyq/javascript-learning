@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Data Structures and Modern Operators</title>
-  <link rel="stylesheet" href="../main.css" <!-- Google Font Preconnect-->
+  <link rel="stylesheet" href="../../main.css" />
+    <!-- Include Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet">
+  <!-- Google Font Preconnect-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Google Font Preconnect-->
@@ -15,13 +18,17 @@
     rel="stylesheet">
   <!--sitewide font-family: 'Lato', sans-serif; -->
 
+
+
+  
+
 </head>
 
 <body class="wrapper">
   <br>
 
   <header>
-    <h1> <a class="textUnderline inactive" href="/"> JavaScript Learning </a> > Data Structures and Modern Operators
+    <h1> <a class="textUnderline inactive" href="/javascript-learning"> JavaScript Learning </a> / Data Structures and Modern Operators
     </h1>
   </header>
   <hr>
@@ -29,18 +36,88 @@
   <br>
   <br>
   <br>
-  <pre><code>
-      const restaurant = {
-        name: "Classico Italiano",
-        location: "Via Angelo Tavanti 23, Firenze, Italy",
-        categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
-        starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-        mainMenu: ["Pizza", "Pasta", "Risotto"]
-      }
-        </code></pre>
+  <h2>103 &ndash; 105. Destructuring Array/Object</h2>
 
+  <h2>106 &ndash; 108. Spread(...) and Rest Operator </h2>
+  <h3>Spread Operator In Function Calls: </h3>
+  <pre class="language-javascript"><code class="language-javascript">
+    function sum(a, b, c) {
+      return a + b + c;
+    }
+    
+    const numbers = [1, 2, 3];
+    console.log(sum(...numbers)); // 6
+    
+      </code></pre>
+  <h3>Spread Operator In Array Literals </h3>
+  <pre><code class="language-javascript">
+    const arr1 = [1, 2, 3];
+    const arr2 = [...arr1, 4, 5, 6];
+    console.log(arr2); // [1, 2, 3, 4, 5, 6]
+  </code></pre>
+  <h3>Spread Operator In Object Literals </h3>
+  <pre><code class="language-javascript">
+    const obj1 = { a: 1, b: 2 };
+    const obj2 = { ...obj1, c: 3 };
+    console.log(obj2); // { a: 1, b: 2, c: 3 }
+
+  </code></pre>
+
+  <hr>
+  <br>
+  <br>
+  <h2>108 &ndash; 109. Logical Operators ('&&,' '||', and '??')</h2>
+  <h3>The Nullish Coalescing Operator(??) </h3>
+
+  <pre><code class="language-javascript">
+    restaurant.numGuests = 0;
+    const guests2 = restaurant.numGuests || 10;
+    console.log(guests2);
+    
+    // nullish: null and underfined (NOT 0 or )
+    const guestCorrect =  restaurant.numGuests ?? 10;
+    console.log(guestCorrect);
+  </code></pre>
+  <h2>110. Logical Assignment Operators ('&&=', '||=', and '??=')</h2>
+  <pre><code class="language-javascript">
+    const rest1 = {
+      name: 'Capri',
+      // numGuests: 20,
+      numGuests:0,
+    }
+    const rest2 = {
+      name: 'La Piazza',
+      owner: 'Giovanni Rossi',
+    }
+    
+    // OR assignment operator
+    // rest1.numGuests = rest1.numGuests || 10;
+    // rest2.numGuests = rest2.numGuests || 10;
+    
+    // rest1.numGuests ||=10;
+    // rest2.numGuests ||=10;
+    
+    // nullish assignment operator (null or underfined)
+    rest1.numGuests ??=10;
+    rest2.numGuests ??=10;
+    
+    rest1.owner = rest1.owner && '<ANONYMOUS>'
+    rest2.owner = rest2.owner && '<ANONYMOUS>'
+    
+    rest1.owner &&= '<ANONYMOUS>'
+    rest2.owner &&= '<ANONYMOUS>'
+    
+    
+    console.log(rest1);
+    console.log(rest2);
+  </code></pre>
+  <br>
+  <br>
   <script src="scripts.js"></script>
-
+  <!-- Include Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-javascript.min.js"></script>
+  
 </body>
 
 </html>
